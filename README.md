@@ -2,7 +2,7 @@
 FastDPM generation on CIFAR-10, CelebA, and LSUN datasets. See paper via [this link](https://arxiv.org/abs/2106.00132).
 
 # Pretrained models
-Download checkpoints from [this link](https://heibox.uni-heidelberg.de/d/01207c3f6b8441779abf/) and [this link](https://drive.google.com/file/d/1R_H-fJYXSH79wfSKs9D-fuKQVan5L-GR/view?usp=sharing). Put them under ```checkpoints\ema_diffusion_${dataset_name}_model\model.ckpt```, where ```${dataset_name}``` is ```cifar10```, ```celeba64```, ```lsun_bedroom```, ``lsun_church```, or ``lsun_cat```.
+Download checkpoints from [this link](https://heibox.uni-heidelberg.de/d/01207c3f6b8441779abf/) and [this link](https://drive.google.com/file/d/1R_H-fJYXSH79wfSKs9D-fuKQVan5L-GR/view?usp=sharing). Put them under ```checkpoints\ema_diffusion_${dataset_name}_model\model.ckpt```, where ```${dataset_name}``` is ```cifar10```, ```celeba64```, ```lsun_bedroom```, ``lsun_church```, or ```lsun_cat```.
 
 # Usage
 - General command: ```python generate.py -ema -name ${dataset_name} -approxdiff ${approximate_diffusion_process} -kappa ${kappa} -S ${FastDPM_length} -schedule ${noise_level_schedule} -n ${number_to_generate} -bs ${batchsize} -gpu ${gpu_index}```
