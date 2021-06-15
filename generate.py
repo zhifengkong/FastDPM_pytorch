@@ -170,7 +170,7 @@ def _log_cont_noise(t, beta_0, beta_T, T):
 # Standard DDPM generation
 def STD_sampling(net, size, diffusion_hyperparams):
     """
-    Perform the complete sampling step according to DiffWave
+    Perform the complete sampling step according to DDPM
 
     Parameters:
     net (torch network):            the model
@@ -279,7 +279,7 @@ def _precompute_VAR_steps(diffusion_hyperparams, user_defined_eta):
 
 def VAR_sampling(net, size, diffusion_hyperparams, user_defined_eta, kappa, continuous_steps):
     """
-    Perform the complete sampling step according to DiffWave + DDIM
+    Perform the complete sampling step according to user defined variances
 
     Parameters:
     net (torch network):            the model
